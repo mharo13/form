@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <title>Title</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600&display=swap" rel="stylesheet">
+ </head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>      
+    </nav>
+    <div class="wrapper">
+        <h2>Контактна форма</h2>
+        <h4>Попълнете данните</h4>
+
+        <form id="form" onsubmit="return validation()">
+        <div class="input">
+            <input id="name" placeholder="Име" type="text">
+        </div>
+
+        <div class="input">
+            <input id="name2" placeholder="Фамилия" type="text">
+        </div>
+
+        <div class="input">
+            <label for="education"><h5>Образование:</h5></label>
+            <select name="education" id="education">
+                <option value="0">Избери от списъка</option>
+                <option>Начално</option>
+                <option>Основно</option>
+                <option>Средно</option>
+                <option>Средноспециално</option>
+            </select>
+        </div>
+
+        <div id="error_msg"></div>
+
+        <div class="btn">
+            <button type="submit">Изпрати</button>
+        </div>
+        </form>
+
+    </div>
+       
+</body>
+</html>
